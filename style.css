@@ -199,3 +199,9 @@ footer strong{
 ::-webkit-scrollbar-track{
     background:#102a43;
 }
+.buet-logo{
+    width:85px;
+    height:85px;
+    display:block;
+    margin:15px auto;
+}
