@@ -98,3 +98,9 @@ width:90%;
 padding:20px;
 }
 }
+.header-banner{
+    width:100%;
+    display:block;
+    margin-bottom:20px;
+    border-radius:12px;
+}
