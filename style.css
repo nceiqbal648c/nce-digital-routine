@@ -79,6 +79,74 @@ padding:20px;
 
 .room-card h2{
 color:#55d6ff;
+  table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+background:rgba(255,255,255,.05);
+border-radius:12px;
+overflow:hidden;
+}
+
+th{
+background:#00bfff;
+color:#fff;
+padding:12px;
+font-size:15px;
+}
+
+td{
+padding:12px;
+text-align:center;
+border:1px solid rgba(255,255,255,.08);
+font-size:14px;
+}
+
+tr:nth-child(even){
+background:rgba(255,255,255,.03);
+}
+
+tr:hover{
+background:rgba(0,191,255,.10);
+}
+
+img{
+max-width:100%;
+height:auto;
+}
+
+@media (max-width:768px){
+
+.header{
+flex-direction:column;
+gap:15px;
+}
+
+.top-menu{
+flex-direction:column;
+}
+
+.top-menu button{
+width:100%;
+}
+
+.room-card{
+padding:12px;
+}
+
+table{
+font-size:12px;
+display:block;
+overflow-x:auto;
+white-space:nowrap;
+}
+
+th,
+td{
+padding:8px;
+}
+
+}
 margin-bottom:15px;
 text-align:center;
 }
