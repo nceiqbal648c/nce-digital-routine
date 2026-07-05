@@ -3,34 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faculty Login</title>
+    <title>Faculty Login - NCE</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .header-banner {
+            width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 250px);
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
 
-    <img src="../images/Head.png" alt="NCE Header" class="header-banner">
+    <!-- দুই জায়গাতেই Main.png.png ব্যানার সেট করা হলো -->
+    <img src="../images/Main.png.png" alt="NCE Header Banner" class="header-banner">
 
     <div class="container">
-        <div class="login-box">
-            
-            <img src="../images/buet-logo.png" class="logo" alt="BUET Logo" style="display:block; margin:0 auto; width:80px; margin-bottom:15px;">
+        <div class="login-box" style="width:100%; max-width:400px; padding:30px; border-radius:10px; background:#fff; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
             
             <h1>Faculty Login</h1>
             <p>NCE Digital Routine</p>
 
-            <form>
+            <form onsubmit="event.preventDefault(); window.location.href='dashboard.html';">
                 <label>Email</label>
-                <input type="email" placeholder="Enter Faculty Email" required>
+                <input type="email" placeholder="Enter Faculty Email" required style="width:100%; padding:12px; margin: 10px 0 20px 0; border:1px solid #ddd; border-radius:5px;">
 
                 <label>Password</label>
-                <input type="password" placeholder="Enter Password" required>
+                <input type="password" placeholder="Enter Password" required style="width:100%; padding:12px; margin: 10px 0 20px 0; border:1px solid #ddd; border-radius:5px;">
 
-                <button type="button" onclick="window.location.href='dashboard.html'">
+                <button type="submit" style="width:100%; padding:12px; background:#2c3e50; color:#fff; border:none; border-radius:5px; font-size:16px; cursor:pointer;">
                     Login
                 </button>
             </form>
 
-            <button type="button" onclick="window.location.href='../index.html'" style="background:#2c3e50; margin-top:15px; font-size:14px; padding:10px;">
+            <button type="button" onclick="window.location.href='../index.html'" style="width:100%; padding:10px; background:#f0f0f0; color:#2c3e50; border:none; border-radius:5px; margin-top:15px; font-size:14px; cursor:pointer;">
                 ⬅️ Back to Main Routine
             </button>
         </div>
