@@ -1,11 +1,10 @@
 {
   "NCE_Digital_Routine": [
-    {
-      "Day": "Saturday",
-      "08:00": "Theory I",
-      "09:00": "Theory II",
-      "10:00": "Lab I",
-      "11:00": "Lab II"
-    }
+    { "Day": "Saturday", "08:00": "Theory I", "09:00": "Theory II", "10:00": "Lab I", "11:00": "Lab II" },
+    { "Day": "Sunday", "08:00": "Theory III", "09:00": "Theory IV", "10:00": "Lab III", "11:00": "Lab IV" },
+    { "Day": "Monday", "08:00": "Theory V", "09:00": "Theory VI", "10:00": "Lab V", "11:00": "Lab VI" },
+    { "Day": "Tuesday", "08:00": "Theory VII", "09:00": "Theory VIII", "10:00": "Lab VII", "11:00": "Lab VIII" },
+    { "Day": "Wednesday", "08:00": "Theory IX", "09:00": "Theory X", "10:00": "Lab IX", "11:00": "Lab X" },
+    { "Day": "Thursday", "08:00": "Theory XI", "09:00": "Theory XII", "10:00": "Lab XI", "11:00": "Lab XII" }
   ]
 }

@@ -5,26 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NCE Department Routine</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        .banner { max-width: 70%; height: auto; }
+        .qr { max-width: 100px; height: auto; }
+        .container { max-width: 800px; margin: auto; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: center; }
+        th { background-color: #f4f4f4; }
+        footer { margin-top: 30px; text-align: center; }
+    </style>
 </head>
 <body>
-    <h2>NCE Department Routine</h2>
-    <div class="table-container">
-        <table id="ece-table" border="1">
-            <thead>
-                <tr>
-                    <th>Day</th>
-                    <th>08:00</th>
-                    <th>09:00</th>
-                    <th>10:00</th>
-                    <th>11:00</th>
-                </tr>
-            </thead>
-            <tbody id="ece-body"></tbody>
-        </table>
-    </div>
-    <footer style="margin-top: 30px; text-align: center;">
-        <img src="images/footer_graphic.png" alt="Footer Graphic">
+
+    <header class="header">
+        <img src="banner.png" class="banner" alt="NCE Banner">
+        <img src="qr.png" class="qr" alt="QR Code">
+    </header>
+
+    <main class="container">
+        <h2 style="text-align: center;">NCE Department Routine</h2>
+        <div class="table-container">
+            <table id="ece-table">
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>08:00</th>
+                        <th>09:00</th>
+                        <th>10:00</th>
+                        <th>11:00</th>
+                    </tr>
+                </thead>
+                <tbody id="ece-body">
+                    <!-- Data will load here -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <img src="footer_graphic.png" alt="Footer" style="max-width: 100%;">
     </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>
