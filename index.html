@@ -3,39 +3,346 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NCE Department Routine</title>
+    <title>NCE Digital Routine</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
-        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
-        .banner { max-width: 70%; height: auto; }
-        .qr { max-width: 100px; height: auto; }
-        .container { max-width: 800px; margin: auto; }
-        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
-        th, td { border: 1px solid #ddd; padding: 12px; text-align: center; }
-        th { background-color: #f4f4f4; }
-        footer { margin-top: 30px; text-align: center; }
-    </style>
 </head>
 <body>
-    <header class="header">
-        <img src="images/banner.png" class="banner" alt="NCE Banner">
-        <img src="images/qr.png" class="qr" alt="QR Code">
-    </header>
-    <main class="container">
-        <h2 style="text-align: center;">NCE Department Routine</h2>
-        <div class="table-container">
-            <table id="ece-table">
-                <thead>
-                    <tr><th>Day</th><th>08:00</th><th>09:00</th><th>10:00</th><th>11:00</th></tr>
-                </thead>
-                <tbody id="ece-body"></tbody>
-            </table>
-        </div>
-    </main>
+    <!-- ফ্রন্ট পেজের টপে মেইন ব্যানার -->
+    <img src="images/banner.png" alt="NCE Department Banner" style="width: 100%; max-height: 250px; object-fit: cover; display: block;">
+
+    <h2>📅 Full Weekly Routine</h2>
+
+    <img src="images/banner.png" alt="NCE Header" width="100%">
+
+    <h3>🏫 OAB 210</h3>
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>08:00</th>
+            <th>09:00</th>
+            <th>10:00</th>
+            <th>11:00</th>
+            <th>12:00</th>
+            <th>01:00</th>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td>NCE 201<br><small>SI</small></td>
+            <td>EEE 155</td>
+            <td>NCE 101<br><small>SI</small></td>
+            <td>-</td>
+            <td>NCE 205<br><small>MH</small></td>
+            <td>NCE 205<br><small>SI</small></td>
+        </tr>
+        <tr>
+            <td>Sunday</td>
+            <td>NCE 203<br><small>RS</small></td>
+            <td>NCE 201<br><small>AY</small></td>
+            <td>-</td>
+            <td>NCE 205<br><small>MH</small></td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>NCE 205<br><small>SI</small></td>
+            <td>MATH 217</td>
+            <td>NCE 201<br><small>AY</small></td>
+            <td>-</td>
+            <td>NCE 201<br><small>SI</small></td>
+            <td>NCE 205<br><small>MH</small></td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>NCE 203<br><small>RS</small></td>
+            <td>-</td>
+            <td>NCE 201<br><small>AY</small></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+    </table>
+
+    <h3>🏫 PMRE Classroom</h3>
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>08:00</th>
+            <th>09:00</th>
+            <th>10:00</th>
+            <th>11:00</th>
+            <th>12:00</th>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Sunday</td>
+            <td>-</td>
+            <td>MATH 117</td>
+            <td>EEE 155</td>
+            <td>-</td>
+            <td>CHEM 161</td>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>NCE 101<br><small>AY</small></td>
+            <td>HUM 133</td>
+            <td>EEE 155</td>
+            <td>MATH 117</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>-</td>
+            <td>HUM 133</td>
+            <td>MATH 117</td>
+            <td>CHEM 161</td>
+            <td>NCE 101<br><small>AY</small></td>
+        </tr>
+    </table>
+
+    <h3>🏫 ECE Basement</h3>
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>08:00</th>
+            <th>09:00</th>
+            <th>10:00</th>
+            <th>11:00</th>
+            <th>12:00</th>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td>NCE 201<br><small>SI</small></td>
+            <td>NCE 205<br><small>SI</small></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Sunday</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>NCE 101<br><small>SI</small></td>
+            <td>NCE 203<br><small>RS</small></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>-</td>
+            <td>HUM 133</td>
+            <td>CHEM 161</td>
+            <td>NCE 101<br><small>AY</small></td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+    </table>
+
+    <h3>🏫 OAB 202E</h3>
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>08:00</th>
+            <th>09:00</th>
+            <th>10:00</th>
+            <th>11:00</th>
+            <th>12:00</th>
+            <th>01:00</th>
+            <th>02:00</th>
+            <th>03:00</th>
+            <th>04:00</th>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td>ME 243</td>
+            <td>CSE 273</td>
+            <td>ME 243</td>
+            <td>PHY 251</td>
+            <td>NCE 211<br><small>MH</small></td>
+            <td>-</td>
+            <td>NCE 306<br><small>RS / SAA</small></td>
+            <td>MATH 217</td>
+            <td>NCE 304</td>
+        </tr>
+        <tr>
+            <td>Sunday</td>
+            <td>ME 243</td>
+            <td>CSE 273</td>
+            <td>MATH 219</td>
+            <td>PHY 251</td>
+            <td>CSE 273</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>MATH 219</td>
+            <td>NCE 211<br><small>MH</small></td>
+            <td>NCE 212<br><small>SAA / MH</small></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>MATH 219</td>
+            <td>PHY 251</td>
+            <td>NCE 211<br><small>MH</small></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+    </table>
+
+    <h3>🏫 OAB 209</h3>
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>08:00</th>
+            <th>09:00</th>
+            <th>10:00</th>
+            <th>11:00</th>
+            <th>12:00</th>
+            <th>01:00</th>
+            <th>02:00</th>
+            <th>03:00</th>
+            <th>04:00</th>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td>NCE 305<br><small>RS</small></td>
+            <td>NCE 305<br><small>WS</small></td>
+            <td>HUM 395</td>
+            <td>NCE 301<br><small>AZ</small></td>
+            <td>PHY 303</td>
+            <td>-</td>
+            <td>NCE 208</td>
+            <td>NCE 214</td>
+            <td>MATH 217</td>
+        </tr>
+        <tr>
+            <td>Sunday</td>
+            <td>NCE 307<br><small>WS</small></td>
+            <td>NCE 305<br><small>WS</small></td>
+            <td>HUM 395</td>
+            <td>PHY 303</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>NCE 305<br><small>RS</small></td>
+            <td>NCE 303<br><small>MT</small></td>
+            <td>NCE 301<br><small>AZ</small></td>
+            <td>NCE 310<br><small>SI / MH</small></td>
+            <td>PHY 307</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>NCE 303<br><small>WS</small></td>
+            <td>NCE 305<br><small>WS</small></td>
+            <td>NCE 303<br><small>MT</small></td>
+            <td>HUM 395</td>
+            <td>NCE 301<br><small>AZ</small></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>NCE 305<br><small>RS</small></td>
+            <td>NCE 302<br><small>SAA / MAK</small></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <button onclick="window.location.href='admin/index.html'">
+        ⚙️ Update Routine
+    </button>
+
+    <h3>Scan QR Code</h3>
+    <p>Open NCE Digital Routine on your phone</p>
+    <img src="images/qr.png" alt="NCE QR Code" width="220">
+
     <footer>
-        <img src="images/footer_graphic.png" alt="Footer" style="max-width: 100%;">
+        <p><strong>Created by: Iqbal Ahmed</strong></p>
+        <p>NCE Department, BUET</p>
     </footer>
-    <script src="js/script.js"></script>
+
+<script src="js/script.js"></script>
 </body>
 </html>
