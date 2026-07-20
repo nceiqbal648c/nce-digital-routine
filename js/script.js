@@ -1,19 +1,12 @@
-fetch('data/routine.json')
-    .then(response => response.json())
-    .then(data => {
-        const tbody = document.getElementById('ece-body');
-        tbody.innerHTML = '';
-        if (data.NCE_Digital_Routine && data.NCE_Digital_Routine.length > 0) {
-            data.NCE_Digital_Routine.forEach(item => {
-                const row = `<tr>
-                    <td>${item.Day}</td>
-                    <td>${item['08:00']}</td>
-                    <td>${item['09:00']}</td>
-                    <td>${item['10:00']}</td>
-                    <td>${item['11:00']}</td>
-                </tr>`;
-                tbody.innerHTML += row;
-            });
-        }
-    })
-    .catch(error => console.error('Error loading JSON:', error));
+document.addEventListener("DOMContentLoaded", function() {
+    const tableBody = document.getElementById("ece-body");
+    const schedule = [
+        { day: "Saturday", slots: ["Theory I", "Theory II", "Lab I", "Lab II"] },
+        { day: "Tuesday", slots: ["Class A", "Class B", "Class C", "Class D"] }
+    ];
+
+    schedule.forEach(item => {
+        let row = `<tr><td>${item.day}</td><td>${item.slots[0]}</td><td>${item.slots[1]}</td><td>${item.slots[2]}</td><td>${item.slots[3]}</td></tr>`;
+        tableBody.innerHTML += row;
+    });
+});
